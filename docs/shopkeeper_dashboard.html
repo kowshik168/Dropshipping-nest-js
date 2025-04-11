@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shopkeeper Dashboard Features</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f6f9;
+      margin: 0;
+      padding: 2rem;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+    }
+
+    table {
+      margin: 2rem auto;
+      width: 90%;
+      max-width: 1000px;
+      border-collapse: collapse;
+      background-color: #ffffff;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    th, td {
+      padding: 16px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #2980b9;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    tr:hover {
+      background-color: #eaf4fb;
+    }
+
+    td {
+      border-bottom: 1px solid #ddd;
+    }
+  </style>
+</head>
+<body>
+  <h1>🛠️ Shopkeeper Dashboard Features</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Feature</th>
+        <th>Description</th>
+        <th>Status</th>
+        <th>Fetch From (DB/Collection)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>🏪 Shop Name</td>
+        <td>Name of the shop owned by shopkeeper</td>
+        <td>Pending</td>
+        <td>From shop database and shops collection</td>
+      </tr>
+      <tr>
+        <td>📶 Shop Status</td>
+        <td>“Active” or “Inactive” – affects product visibility</td>
+        <td>Pending</td>
+        <td>From shop database and shops collection</td>
+      </tr>
+      <tr>
+        <td>📦 Active Orders</td>
+        <td>Orders currently in progress</td>
+        <td>Pending</td>
+        <td>From orders database and orders collection</td>
+      </tr>
+      <tr>
+        <td>⭐ Shop Rating</td>
+        <td>Average rating from customers</td>
+        <td>Pending</td>
+        <td>From shop database and shop collection</td>
+      </tr>
+      <tr>
+        <td>💰 Revenue</td>
+        <td>Total earnings, optionally based on timestamps</td>
+        <td>Pending</td>
+        <td>From orders database and orders collection</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>

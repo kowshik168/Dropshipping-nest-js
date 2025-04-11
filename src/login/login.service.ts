@@ -28,7 +28,7 @@ if (!isMatch) {
   const updates: any = { loginAttempts: attempts + 1 };
 
   if (attempts + 1 >= 3) {
-    updates.lockUntil = new Date(Date.now() + 30 * 60 * 1000);
+    updates.lockUntil = new Date(new Date().getTime() + (5.5 * 60 * 60 * 1000) + 30 * 60 * 1000);
   }
 
   await userCollection.updateOne({ username }, { $set: updates });

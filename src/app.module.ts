@@ -7,6 +7,8 @@ import { SignupController } from './signup/signup.controller';
 import { SignupService } from './signup/signup.service';
 import { LoginController } from './login/login.controller';
 import { LoginService } from './login/login.service';
+import { ShopkeeperService } from './shopkeeper/shopkeeper.service';
+import { ShopkeeperController } from './shopkeeper/shopkeeper.controller';
 
 @Module({
   imports: [
@@ -29,7 +31,8 @@ import { LoginService } from './login/login.service';
     AppController,
     SignupController,
     LoginController,
+    ShopkeeperController,
   ],
-  providers: [AppService, SignupService, LoginService],
+  providers: [AppService, SignupService, LoginService, ShopkeeperService],
 })
 export class AppModule {}

@@ -34,10 +34,10 @@ Roles:Customer or Seller
 
 Seller:
 
-1)Sign up API
+1)Sign up API (Done)
 Description:In seller collection, it should add all the details of seller.(Ensure role check).
 
-2)Sign in API
+2)Sign in API(Done)
 Description:Should check if username and password are correct and allow access.
 
 3)Inside account, webpage API's (CRUD Operations)-4 API's
@@ -52,10 +52,10 @@ Description:Should be able to view their past and current orders.
 
 Customer APIs
 
-1)Sign Up API
+1)Sign Up API(Done)
  Description: Able to create a account.API should be able to add the customer details to customer_info DB
 
-2)Sign In API 
+2)Sign In API (Done)
  Description: Should be able to match the account details with customer_info DB and allow access.
 
 3)Search Product API
