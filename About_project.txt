@@ -1,0 +1,68 @@
+This project aims to develop a fully functional backend for a dropshipping website.
+
+
+Tools and Technologies required:
+1)nest js
+2)MongoDB
+
+
+In MongoDB we need 4 collections as of now.
+
+1)Customer_info
+2)Product_info
+3)Seller_info
+4)Payments_info
+
+We need to define schemas for these.
+
+Functionality:
+
+1)Customer should be able to create an account in our website.
+2)They should be able to login and also be able to update their account details.
+3)They should be able to see the products_list.
+
+Similarly,
+
+1)Seller should be able to create a business account.
+2)They should be able to upload images of their product along with product description and available quantity.
+3)They should be able to recieve money after transaction.
+
+
+API's:
+
+Roles:Customer or Seller
+
+Seller:
+
+1)Sign up API
+Description:In seller collection, it should add all the details of seller.(Ensure role check).
+
+2)Sign in API
+Description:Should check if username and password are correct and allow access.
+
+3)Inside account, webpage API's (CRUD Operations)-4 API's
+Description:Should be able to view their current products available. Either add or remove or update the current stock position.
+
+4)Update account details API.
+Description:Should be able to update their account details.
+
+5)Order History.
+Description:Should be able to view their past and current orders.
+
+
+Customer APIs
+
+1)Sign Up API
+ Description: Able to create a account.API should be able to add the customer details to customer_info DB
+
+2)Sign In API 
+ Description: Should be able to match the account details with customer_info DB and allow access.
+
+3)Search Product API
+ Description: Should be able to get the info of product as per request. Each product can have multiple categories.
+
+4)View Product API 
+ Description: Should be able the show details (inage,price) and description of a Product.
+
+5)Order History
+ Description: Should be able to fetch past and ongoing order details from payment_info DB.(Add a field about current status of order, such as delivered or in progress)
