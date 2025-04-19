@@ -9,6 +9,8 @@ import { LoginController } from './login/login.controller';
 import { LoginService } from './login/login.service';
 import { ShopkeeperService } from './shopkeeper/shopkeeper.service';
 import { ShopkeeperController } from './shopkeeper/shopkeeper.controller';
+import { AuthModule } from './auth/auth.module';
+// import { AuthService } from './auth/auth.service';
 
 @Module({
   imports: [
@@ -21,6 +23,8 @@ import { ShopkeeperController } from './shopkeeper/shopkeeper.controller';
         uri: config.get<string>('MONGO_URI'),
       }),
     }),
+
+    AuthModule,
 
     // GraphQLModule.forRoot(/*{
     //   driver: ApolloDriver,

@@ -1,0 +1,13 @@
+[ Mukesh logs in ]
+      ⬇️
+[ JWT token generated with payload ]
+      ⬇️
+[ Token sent in Authorization header ]
+      ⬇️
+[ JWT Guard extracts and validates it ]
+      ⬇️
+[ validate(payload) returns user info ]
+      ⬇️
+[ NestJS sets req.user ]
+      ⬇️
+[ Your controller accesses req.user ]

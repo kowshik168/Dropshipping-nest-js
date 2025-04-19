@@ -11,7 +11,7 @@ export class SignupService {
         //First check if the username is already existing in the current database
         //If present,return a message saying that username is already taken
         const {username,password,email,userType}=Body;
-        const db = mongoose.createConnection(process.env.MONGO_URI + '/users');
+        const db = mongoose.createConnection(process.env.MONGO_URI + '/dropshipping');
         const userCollection=db.collection('users');
 
         if(userType=="admin"){
@@ -28,7 +28,7 @@ export class SignupService {
         }
 
        
-        console.log('bcrypt is:', bcrypt);
+        // console.log('bcrypt is:', bcrypt);
 
         const saltrounds= 10;
         const hashedPassword= await bcrypt.hash(password,saltrounds)
